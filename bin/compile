@@ -32,4 +32,4 @@ while read file; do
 done <${CLEAN_FILES}
 
 echo "Removing .map files from slug"
-find `pwd` -type f -name '*.map' | rm;
+find ${BUILD_DIR} -type f -name '*.map' | | xargs -0 -r rm -rf
